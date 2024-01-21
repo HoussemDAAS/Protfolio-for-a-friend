@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
-import logo from'../../assets/logo.png'
+import { FiAlignJustify } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 import { useState, useEffect } from 'react'
 const Navbar = () => {
   const[scroll,setScroll]=useState(false);
@@ -16,9 +17,15 @@ const Navbar = () => {
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    };}, []);
+    
   const navbarClasses = `navbar ${scroll ? 'scrolled' : ''}`;
+
+
+  const [showMenu, setShowMenu] = useState(false);
+  function toggleMenu() {
+    setShowMenu(!showMenu);
+  }
   return (
   
     <div className={navbarClasses}>
@@ -30,8 +37,20 @@ const Navbar = () => {
             <li>Skills</li>
             <li>Portfolio</li>
           </ul>
-          <div className='navbar-container_links-contact'><a href="#contact">Contact me</a></div>
-          
+        </div>
+        <div className='navbar-container_links-contact'><a href="#contact">Contact me</a></div>
+        <div className='small-screen'>
+          <FiAlignJustify color="white" fontSize={27} onClick={toggleMenu} />
+          {showMenu && (
+            <div className='small-screen-overly flex__center slide-bottom'>
+               <FiX className='overlay__close' fontSize={27} onClick={toggleMenu}/>
+               <ul className='navbar-small-screen_links'>
+            <li>About me</li>
+            <li>Skills</li>
+            <li>Portfolio</li>
+          </ul>
+            </div>
+          )}
         </div>
     
     </div>
