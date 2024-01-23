@@ -1,17 +1,267 @@
-.header {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-background-color: var(--background-img);
-background-size: cover;
-background-position: center;
-
-height: 100vh;
-width: 100%;
 
 
-justify-content: center;
-align-items: center;
+section{
+  padding: 5% 10%;
+}
+.main-home{
+    position:relative;
+    width: 100%;
+  
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--background-img);
+    z-index: 10;
+
+  }
+  .background-image{
+    display: none;
+  }
+  .main-home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:50% ;
+    background: url(/profile.png);
+    background-size:cover ;
+    clip-path:polygon(0 0,100% 0,100% 100%,20% 100%); 
+    transform: scale(1);
+    z-index: -1;
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: var(--primary-color);;
+  }
+  ::-webkit-scrollbar-track{
+    background: transparent;
+  }
+  .main-text{
+    margin-top: 70px;
+    z-index: 1;
+  }
+  .main-text h1{
+    color :var(--primary-color);
+    font-family: var(--font-title);
+    line-height: normal;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    font-style: normal;
+    letter-spacing: 0.5px;
+  }
+  .main-text h3 {
+    color :var(--primary-color);
+    font-family: var(--font-title);
+    font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+
+  }
+  p{
+    font-family: var(--font-base);
+    color:#909090;
+    
+   font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 7rem;
+   
+  }
+  #spin {
+    color: #909090;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+  }
+  
+  #spin::after {
+    content: "Front-end Developer ";
+    display: inline-block;
+    transform-origin: center bottom; /* Set the transform origin to bottom center */
+    animation: spin 4s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0%, 100% {
+      transform: rotateX(0deg);
+      content: "Front-end Developer ";
+    }
+    50% {
+      transform: rotateX(0deg);
+      content: "Multi Designer ";
+    }
+  }
+  .logo {
+   margin-bottom: 4rem;
+   margin: left -7rem;
+
+    
+  }
+
+  .logo img {
+    width: 60px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3rem;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 1rem 4rem 1rem; /* Top, Right, Bottom, Left */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    text-decoration: none; /* To remove default underline on anchor tags */
+  }
+  /* Responsive Breakpoints */
+@media screen and (max-width: 1150px) {
+  .logo {
+    margin-bottom: 2rem; /* Adjusted for better spacing on smaller screens */
+  }
+  .logo img {
+    width: 50px;
+  }
+
+  .social-icons {
+    margin-left: 0.5rem; /* Adjusted for better spacing on smaller screens */
+  }
+
+  .main-text h1 {
+    font-size: 4vw; /* Adjusted for smaller screens */
+  }
+
+  .main-text h3 {
+    font-size: 2.5vw; /* Adjusted for smaller screens */
+    margin-left: 0.5rem; /* Adjusted for better spacing on smaller screens */
+    margin-bottom: 1rem; /* Adjusted for better spacing on smaller screens */
+  }
+
+  p {
+    margin-left: 1rem; /* Adjusted for better spacing on smaller screens */
+  }
 }
 
+@media screen and (max-width: 850px) {
+  section{
+    padding: 0
+  }
+ 
+    .main-text {
+      text-align: center; /* Center the text */
+      position: relative;
+      top: 8%;
+      transform:none ;
+    }
   
+    .main-text h1 {
+      font-size: 5vw; /* Adjusted for smaller screens */
+    }
+  
+    .main-text h3 {
+      font-size: 3vw; /* Adjusted for smaller screens */
+      margin-left: 0; /* Adjusted for better spacing on smaller screens */
+      margin-bottom: 0.5rem; /* Adjusted for better spacing on smaller screens */
+    }
+  
+    p {
+      margin-left: 0.5rem; /* Adjusted for better spacing on smaller screens */
+    }
+  
+    .main-home {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column; /* Stack children in a column */
+      align-items: center; /* Center horizontally */
+    }
+    .background-image{
+      display: block;
+      width: 100%;
+      margin-top: -9rem;
+      z-index: 99;
+      position: relative;
+    }
+    .background-image img{
+      width: 100%;
+
+    }
+  
+    .main-home {
+      flex: -9;
+     
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .background-image{
+      background: var('/profile.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 99;
+    }  
+    .main-home::before {
+      content: ''; /* No content for pseudo-element */
+      background: none;
+      clip-path: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+  .main-text h1 {
+    font-size: 6vw; /* Adjusted for smaller screens */
+  }
+
+  .main-text h3 {
+    font-size: 4vw; /* Adjusted for smaller screens */
+    margin-bottom: 0.5rem; /* Adjusted for better spacing on smaller screens */
+  }
+
+  p {
+    margin-left: 0; /* Adjusted for better spacing on smaller screens */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-text h1 {
+    font-size: 8vw; /* Adjusted for smaller screens */
+  }
+
+  .main-text h3 {
+    font-size: 6vw; /* Adjusted for smaller screens */
+  }
+
+  p {
+    margin-left: 0; /* Adjusted for better spacing on smaller screens */
+  }
+  .main-home {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack children in a column */
+    align-items: center; /* Center horizontally */
+  }
+}
