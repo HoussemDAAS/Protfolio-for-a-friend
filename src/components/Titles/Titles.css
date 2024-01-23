@@ -1,0 +1,36 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title p{
+    color: #000;
+    border: 2px solid #000;
+ padding: 0.5rem 2rem 0.5rem 2rem; 
+    background: rgba(255, 255, 255, 0.00);
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 550;
+    /* 38.37px */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-left: 0;
+}
+.scale-in-center {
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

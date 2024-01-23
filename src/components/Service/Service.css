@@ -1,0 +1,66 @@
+.service {
+    position: relative;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem;
+    
+
+  }
+  .service p{
+    font-family: var(--font-base);
+    font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+  
+   margin-left: 0px;
+   text-align: justify;
+   color: var(--primary-color);
+  }
+  
+  .service-card {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .service-card h3 {
+    font-family: var(--font-base);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(1%, -50%);
+    margin: 0;
+    color: rgb(26, 24, 24); /* Optional: Adjust text color to make it visible on the image */
+   
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 4.078px;
+text-align: center;
+  }
+
+
+
+  @media screen and (max-width: 650px) {
+    
+  .service-card{
+    font-size: 15px;
+
+  }
+  .service p{
+    font-family: var(--font-base);
+    font-size: 10px;
+    word-wrap: break-word;
+    width: 60%;
+text-align: center;
+
+  }
+  }
+
+  

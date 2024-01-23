@@ -1,8 +1,7 @@
-import { useState } from 'react'
-
 import './App.css'
 import Header from './container/Header/Header'
 import Navbar from './components/NavBar/Navbar'
+import Services from './container/Services/Services'
 
 function App() {
  
@@ -12,7 +11,7 @@ function App() {
       <Navbar />
       <div className=''>
       <Header/>
-      <h1>Hello</h1>
+<Services/>
       </div>
    
  
