@@ -125,7 +125,7 @@ section{
     text-decoration: none; /* To remove default underline on anchor tags */
   }
   /* Responsive Breakpoints */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   .logo {
     margin-bottom: 2rem; /* Adjusted for better spacing on smaller screens */
   }
@@ -152,7 +152,7 @@ section{
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1150px) {
   section{
     padding: 0
   }

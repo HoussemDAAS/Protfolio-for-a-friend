@@ -25,7 +25,8 @@ const Services = () => {
           ))}
         </div>
       </div>
-        
+      <img src={devider} alt="" style={{ alignItems: 'center',
+  width: '100px'}}/>
     </div>
   )
 }

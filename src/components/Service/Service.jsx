@@ -1,7 +1,9 @@
 import React from 'react'
 import './Service.css'
-import service from '../../assets/service1.svg'
+
+
 const Service = ({data:{title,description,image}}) => {
+  
   return (
     <div className='service'>
         <div className="service-card">

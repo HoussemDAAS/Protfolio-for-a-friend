@@ -1,73 +1,89 @@
-.services{
-    background-color: var(--background-img);
-    padding: 5rem 0rem 0rem 0rem;
-  margin : 5px 0rem 0rem 0rem; 
-  display: block;
-    justify-content: space-between;
-    align-items: center;
 
-  
-    min-height: 100vh;
+.services {
+  background-color: var(--background-img);
+  padding: 5rem 0rem 0rem 0rem;
+  margin: 5px 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-.services-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0rem 0rem 0rem 0rem;
-    justify-content: space-between;
-}  
-.services-container p{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: #050505;
-    word-wrap: break-word;
-    width: 60%;
-text-align: center;
-font-family: var(--font-base);
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
 
-margin-left: 0px;
-} 
-.services-container img{
-    align-items: center;
-    width: 100px;
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0rem 0rem 0rem 0rem;
+  justify-content: space-between;
+}
+
+.services-container p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #050505;
+  word-wrap: break-word;
+  width: 60%;
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 0px;
+}
+
+.services-container img {
+  align-items: center;
+  width: 100px;
 }
 
 .services-cards {
-    display: flex;
-    flex-direction: column; /* Display services in a column */
-    align-items: center;
-    text-align: center;
-    margin: 1rem;
-  
-    /* Optional: Adjust spacing between services */
-    gap: 1rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  /* Display services in a column */
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+  justify-content: center;
+  /* Optional: Adjust spacing between services */
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  /* Adjust the max-width as needed */
+  margin-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+  /* Optional: Adjust margin between rows */
+}
+
+.services-row .service-card {
+  flex: 1;
+  max-width: 48%;
+  /* Adjust the max-width to control the width of each service card */
+}
+
+@media screen and (max-width: 650px) {
   .services-row {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    max-width: 900px; /* Adjust the max-width as needed */
-    margin-bottom: 1rem; /* Optional: Adjust margin between rows */
+    max-width: 900px;
+    /* Adjust the max-width as needed */
+    margin-bottom: 1rem;
+    /* Optional: Adjust margin between rows */
   }
-  
-  .services-row .service-card {
-    flex: 1;
-    max-width: 48%; /* Adjust the max-width to control the width of each service card */
+  .services-container p {
+    width: 80%; /* Adjust the width as needed for smaller screens */
+    margin: auto; 
+    font-size: 10px;
+    padding: 1rem;/* Center horizontally */
   }
-  @media screen and (max-width: 650px) {
-    .services-row {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      width: 100%;
-      max-width: 900px; /* Adjust the max-width as needed */
-      margin-bottom: 1rem; /* Optional: Adjust margin between rows */
-    }
-  }
+}

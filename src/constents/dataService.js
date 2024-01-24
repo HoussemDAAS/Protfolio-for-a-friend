@@ -1,4 +1,4 @@
-import { images } from "./images";
+import { images } from "../assets/images";
 export const dataServices = [
   {
     id: 1,
