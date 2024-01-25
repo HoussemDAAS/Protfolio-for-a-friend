@@ -1,0 +1,7 @@
+.image img {
+    flex: 0 1 calc(23% - 1rem);
+    box-sizing: border-box;
+    width: 60px;
+    height: 66px;
+}
+

@@ -1,7 +1,7 @@
 
 .services {
   background-color: var(--background-img);
-  padding: 5rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
   margin: 5px 0rem 0rem 0rem;
   display: flex;
   flex-direction: column;
