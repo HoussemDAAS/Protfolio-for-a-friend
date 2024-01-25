@@ -7,7 +7,7 @@ import Service from '../../components/Service/Service'
 const Services = () => {
   
   return (
-    <div className='services'> 
+    <div className='services' id='about'> 
       <Titles title={'Services'} />
         <div className='services-container'>
             <p>I am the manager of SC Art Visual, a dynamic company offering a wide range of multi-services. Our website showcases the diverse array of creative solutions we provide, giving you a glimpse of our capabilities and expertise. Explore our website to discover the possibilities and get inspired by the innovative solutions we can offer. Enjoy the journey of exploring our services and see how we can bring your vision to life.</p>

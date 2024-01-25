@@ -33,9 +33,9 @@ const Navbar = () => {
       
         <div className='navbar-container_links'>
           <ul>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
+            <li ><a href="#about">About me</a></li>
+            <li > <a href="#skills">Skills</a></li>
+            <li > <a href="#portfolio">Portfolio</a></li>
           </ul>
         </div>
         <div className='navbar-container_links-contact'><a href="#contact">Contact me</a></div>
@@ -45,9 +45,9 @@ const Navbar = () => {
             <div className='small-screen-overly flex__center slide-bottom'>
                <FiX className='overlay__close' fontSize={27} onClick={toggleMenu}/>
                <ul className='navbar-small-screen_links'>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
+               <li ><a href="#about">About me</a></li>
+            <li > <a href="#skills">Skills</a></li>
+            <li > <a href="#portfolio">Portfolio</a></li>
           </ul>
             </div>
           )}

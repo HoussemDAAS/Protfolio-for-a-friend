@@ -7,7 +7,7 @@ import {dataImagesUing,dataImagesDesign,dataImagesDev} from '../../constents/dat
 import Links from '../../components/Links/Links';
 const Skills = () => {
   return (
-    <div className='skills'>
+    <div className='skills' id='skills'> 
       <Titles title={'SKILLS'} />
       
       <ItemSkill title={"USING NOW:"} images={dataImagesUing}/>

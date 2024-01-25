@@ -24,7 +24,7 @@ const Header = () => {
   //     </div>
   //   </div>
   // </header>
-<section className='main-home'>
+<section className='main-home' id='header'>
   
   <div className='main-text'>
     <div className="logo">

@@ -5,6 +5,7 @@ import Services from './container/Services/Services'
 import Skills from './container/Skills/Skills'
 import {dataImagesUing,dataImagesDesign} from './constents/dataImages'
 import Footer from './container/Footer/Footer'
+import Contact from './container/Contact/Contact'
 function App() {
  
 
@@ -15,6 +16,7 @@ function App() {
       <Header/>
 <Services/>
 <Skills/>
+ <Contact />
 <Footer/>
       </div>
    
