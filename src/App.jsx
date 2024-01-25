@@ -4,6 +4,7 @@ import Navbar from './components/NavBar/Navbar'
 import Services from './container/Services/Services'
 import Skills from './container/Skills/Skills'
 import {dataImagesUing,dataImagesDesign} from './constents/dataImages'
+import Footer from './container/Footer/Footer'
 function App() {
  
 
@@ -14,7 +15,7 @@ function App() {
       <Header/>
 <Services/>
 <Skills/>
-
+<Footer/>
       </div>
    
  
