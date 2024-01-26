@@ -1,0 +1,17 @@
+.portfolio {
+    margin: 5px 0rem 0rem 0rem;
+    
+}
+
+.portfolio-title-background {
+    background: url('/bg2.jpg');
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    height: 321px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+

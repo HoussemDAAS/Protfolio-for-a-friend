@@ -4,9 +4,11 @@ import './Portfolio.css'
 const Portfolio = () => {
   return (
     <div className='portfolio' id='portfolio'>
+
       <div className='portfolio-title-background'>
         <Titles title={'PORTFOLIO'} />
       </div>
+      
     </div>
   )
 }
